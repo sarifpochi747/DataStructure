@@ -1,0 +1,7 @@
+f = open("demofile.txt", "r+")
+str = f.read()
+str = str.replace("\n\n\n","\n")
+print(str)
+f2 = open("myfile.txt","a")
+f2.write(str)
+f2.close()
